@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>Memory Match</h1>
+      <p class="sub">Flip two cards. Find every pair.</p>
+    </header>
+
+    <section class="controls" aria-label="Game controls">
+      <label class="field">
+        Level
+        <select id="level">
+          <option value="easy">Easy (4 × 3)</option>
+          <option value="medium" selected>Medium (4 × 4)</option>
+          <option value="hard">Hard (6 × 5)</option>
+        </select>
+      </label>
+      <button id="restart" class="btn" type="button">New game</button>
+    </section>
+
+    <section class="stats" aria-live="polite">
+      <div><span class="label">Moves</span><strong id="moves">0</strong></div>
+      <div><span class="label">Time</span><strong id="time">0:00</strong></div>
+      <div><span class="label">Best</span><strong id="best">–</strong></div>
+    </section>
+
+    <div id="board" class="board" role="group" aria-label="Cards"></div>
+  </main>
+
+  <dialog id="win">
+    <h2>You matched them all</h2>
+    <p id="win-text"></p>
+    <button id="play-again" class="btn" type="button">Play again</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
