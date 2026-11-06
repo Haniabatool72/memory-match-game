@@ -21,7 +21,7 @@ A card-matching game built with plain HTML, CSS and JavaScript. No frameworks, n
 ## Run locally
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/memory-card-game.git
+git clone https://github.com/Haniabatool72/memory-card-game.git
 cd memory-card-game
 ```
 
